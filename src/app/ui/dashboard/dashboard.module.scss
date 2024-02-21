@@ -1,0 +1,12 @@
+.container {
+  @apply flex;
+  // display: flex;
+}
+
+.menu {
+  @apply flex-1 bg-gray-200 p-5; 
+}
+
+.content {
+  @apply flex-4 p-5;
+}

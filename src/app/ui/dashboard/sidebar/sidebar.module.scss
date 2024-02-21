@@ -1,0 +1,40 @@
+.container{
+  @apply sticky top-40;
+}
+
+.user{
+  @apply flex item-cnter gap-20 mb-20;
+}
+
+.userImage{
+  @apply rounded-full;
+  object-fit: cover;
+}
+
+.userDetail{
+  @apply flex flex-col;
+}
+
+.username{
+  @apply  font-semibold;
+}
+
+.userTitle{
+  @apply text-xs text-gray-500
+}
+
+.list{
+  @apply list-none;
+}
+
+.cat{
+  @apply text-gray-500 font-semibold text-sm my-2;
+}
+
+.logout{
+  @apply px-4 my-1 flex items-center gap-4 cursor-pointer rounded-lg border-none bg-transparent text-white text-white w-full;
+}
+
+.logout:hover{
+  @apply bg-gray-700;
+}

@@ -3,15 +3,14 @@ import MenuLink from "./menuLink/menuLink";
 import styles from './sidebar.module.scss'
 import {
   MdDashboard,
-  MdSupervisedUserCircle,
+  MdAddBox,
   MdShoppingBag,
-  MdAttachMoney,
-  MdWork,
+  MdAssignmentAdd,
   MdAnalytics,
   MdPeople,
   MdOutlineSettings,
   MdHelpCenter,
-  // MdLogout,
+  MdDraw
 } from "react-icons/md";
 
 const menuItems = [
@@ -24,39 +23,24 @@ const menuItems = [
         icon: <MdDashboard />,
       },
       {
-        title: "Users",
-        path: "/dashboard/users",
-        icon: <MdSupervisedUserCircle />,
+        title: "Element",
+        path: "/dashboard/element",
+        icon: <MdAddBox />,
       },
       {
-        title: "Products",
-        path: "/dashboard/products",
+        title: "Product",
+        path: "/dashboard/product",
         icon: <MdShoppingBag />,
       },
       {
-        title: "Transactions",
-        path: "/dashboard/transactions",
-        icon: <MdAttachMoney />,
-      },
-    ],
-  },
-  {
-    title: "Analytics",
-    list: [
-      {
-        title: "Revenue",
-        path: "/dashboard/revenue",
-        icon: <MdWork />,
+        title: "Channel",
+        path: "/dashboard/channel",
+        icon: <MdDraw />,
       },
       {
-        title: "Reports",
-        path: "/dashboard/reports",
-        icon: <MdAnalytics />,
-      },
-      {
-        title: "Teams",
-        path: "/dashboard/teams",
-        icon: <MdPeople />,
+        title: "Order",
+        path: "/dashboard/order",
+        icon: <MdAssignmentAdd />,
       },
     ],
   },
@@ -64,14 +48,24 @@ const menuItems = [
     title: "User",
     list: [
       {
-        title: "Settings",
-        path: "/dashboard/settings",
-        icon: <MdOutlineSettings />,
+        title: "Info",
+        path: "/dashboard/user",
+        icon: <MdHelpCenter />,
       },
       {
-        title: "Help",
-        path: "/dashboard/help",
-        icon: <MdHelpCenter />,
+        title: "Team",
+        path: "/dashboard/user/team",
+        icon: <MdPeople />,
+      },
+      {
+        title: "Logs",
+        path: "/dashboard/user/log",
+        icon: <MdAnalytics />,
+      },
+      {
+        title: "Settings",
+        path: "/dashboard/user/setting",
+        icon: <MdOutlineSettings />,
       },
     ],
   },

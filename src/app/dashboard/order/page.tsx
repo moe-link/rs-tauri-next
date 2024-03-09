@@ -1,6 +1,7 @@
-
-export default function OrderPage() {
+const OrderPage = () => {
     return (
-        <main></main>
+      <div>OrderPage</div>
     )
-}
+  }
+  
+  export default OrderPage

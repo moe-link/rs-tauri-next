@@ -1,7 +1,7 @@
-
-export default function ElementPage() {
+const ElementPage = () => {
     return (
-        <main>
-        </main>
+      <div>ElementPage</div>
     )
-}
+  }
+  
+  export default ElementPage

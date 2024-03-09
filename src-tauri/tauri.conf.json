@@ -11,7 +11,21 @@
   },
   "tauri": {
     "allowlist": {
-      "all": false
+      "all": true,
+      "http": {
+        "scope": ["http://**", "https://**"]
+      },
+      "shell": {
+          "all": false,
+          "open": true
+      },
+      "fs": {
+          "all": true,
+          "scope": ["*", "$DOWNLOAD/*"]
+      },
+      "window": {
+          "all": true
+      }
     },
     "bundle": {
       "active": true,
@@ -28,7 +42,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.tauri.dev",
+      "identifier": "com.tauri.build",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
@@ -55,10 +69,11 @@
     "windows": [
       {
         "fullscreen": false,
-        "height": 600,
+        "height": 800,
         "resizable": true,
         "title": "tauri-next-rs",
-        "width": 800
+        "width": 1200,
+        "decorations": true
       }
     ]
   }

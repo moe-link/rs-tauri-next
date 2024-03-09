@@ -1,12 +1,38 @@
 .container {
-  @apply flex;
-  // display: flex;
+  display: flex;
 }
 
 .menu {
-  @apply flex-1 bg-gray-200 p-5; 
+  flex: 1;
+  background-color: var(--bgSoft);
+  padding: 1.25rem; /* 或者使用 p-5 */
+  min-height: 100vh;
 }
 
 .content {
-  @apply flex-4 p-5;
+  flex: 4;
+  padding: 1.25rem; /* 或者使用 p-5 */
+}
+
+.wrapper {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.main {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.side {
+  flex: 1;
 }
